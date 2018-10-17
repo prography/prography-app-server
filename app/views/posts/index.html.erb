@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
 
+<%= image_tag current_user.user_photo %>
+
 <%= current_user.email%>님 환영합니다.
 <a href="/users/sign_out" data-method="delete">로그아웃</a> <!-- 로그아웃 기능  -->
 

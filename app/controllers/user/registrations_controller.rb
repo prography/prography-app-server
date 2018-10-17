@@ -10,9 +10,10 @@ class User::RegistrationsController < Devise::RegistrationsController
   # end
 
   # POST /resource
-  # def create
-  #   super
-  # end
+   def create
+     super
+     @user.user_photo = params[:user_photo]
+   end
 
   # GET /resource/edit
   # def edit
